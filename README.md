@@ -1,4 +1,3 @@
-# Seputar-gunung-Gamping-diy.com
 
 <h1>Info Seputar Pengerjaan dan Website</h1>
 
