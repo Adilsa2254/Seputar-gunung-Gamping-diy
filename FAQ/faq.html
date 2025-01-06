@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ Page</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        
+        .faq-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .faq-question.open .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #666;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-text {
+            padding-left: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .back-button {
+            display: block;
+            width: 100px;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 40px auto 0;
+        }
+        
+        .back-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="faq-title">FAQ</h1>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="arrow"></span>
+            Apa Itu Gunung Gamping ?
+        </div>
+        <div class="faq-text">
+            Gunung Gamping adalah jenis gunung yang terbentuk dari batuan kapur (gamping) yang kaya akan kalsium karbonat. Proses pembetukannya terjadi melalui Proses sedimentasi di laut, yang kemudian terangkat oleh aktivitas tektonik.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="arrow"></span>
+            Di mana saja Letak Gunung Gamping ?
+        </div>
+        <div class="faq-text">
+            Gunung Gamping sering ditemukan di daerah-daerah yang memiliki aktivitas geologi tertentu, terutama di wilayah yang dahulu pernah terhubung dengan lautan. Contohnya, di Indonesia, gunung gamping banyak ditemukan di daerah seperti Yogyakarta, Karst Padang, dan Gunung Kidul
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="arrow"></span>
+            Apa Saja Manfaat Gunung Gamping ?
+        </div>
+        <div class="faq-text">
+            Batu gamping digunakan dalam sebagai industri, termasuk industri bahan bangunan (seperti semen), industri kimia, dan sebagai bahan baku pembuatan lime (kapur).
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="arrow"></span>
+            Apa Perbedaan Gunung Gamping dan Gunung Berapi ?
+        </div>
+        <div class="faq-text">
+            Gunung gamping terbentuk dari batuan sedimen, sementara gunung berapi terbentuk akibat letusan vulkanik yang mengluarkan magma.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="arrow"></span>
+                Apakah Gunung Gamping dapat digunakan untuk pertanian, dan Apakah gunung gamping berbahaya ?
+        </div>
+        <div class="faq-text">
+            Gunung gamping dapat digunakan untuk pertanian, karena kandungan kalsium karbinat yang tinggi, batu gamping dapat digunakan untuk memperbaiki kualitas tanah, meningkatkan pH tanah yang asam, dan memberikan nutrisi bagi tanaman. Dan gunung gamping juga tidak berbahaya namun daerah-daerah yang memiliki formasi karts, seperti goa-goa yang berada di dalamnya, bisa menjadi berbahaya jika tidak dijaga keselamatannya, karena adanya resiko longsor atau keruntuhan.
+        </div>
+    </div>
+
+    <a href="/Home page/Home.html" class="back-button">BACK</a>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('open');
+                const text = question.nextElementSibling;
+                if (text.style.display === 'none') {
+                    text.style.display = 'block';
+                } else {
+                    text.style.display = 'none';
+                }
+            });
+        });
+    </script>
+<script src="script.js"></script>
+</body>
+</html>

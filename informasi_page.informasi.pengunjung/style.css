@@ -1,0 +1,103 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #202020 0%, #16170c 100%);
+        }
+
+        .main-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-image {
+            width: 100px;
+            height: 100px;
+            /* background-color: #808080; */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/38/Info_Simple.svg');
+            margin-bottom: 1rem;
+            background-size: cover; 
+            background-position: center;
+            border-radius: 50%;
+            
+        }
+        
+        .title {
+            color: #fff200;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgb(243, 231, 231);
+        }
+        
+        .subtitle {
+            color: #fcfcfc;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        .content-box {
+            background-color: #333331;
+            padding: 2rem;
+            border-radius: 20px;
+            color: white;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            border-bottom: 2px solid red;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #666;
+        }
+
+        
+.nav-bar {
+    background-color: #13111100;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background: rgb(251, 255, 0);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.868);
+    transform: translateY(-2px);
+}
