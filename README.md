@@ -5,10 +5,13 @@
 <h3>1. Info Pengerjaan</h3>
 
 <h5>Kelompok</h5>
-<ul>Adil Saputra</ul>ul>
+   * Adil Saputra
+   * Fardi
+   * Ferdi
+   * All
 <div>
 <p>
   Pengerjaan Tugas P15 Ksi yang di kerjakan secara berkelompok, yang dimmanah tugas yang telah dibuat dari pengumpulan data <br>
-  yang telah dikumpul melalui beberapa kali kunjungan dari lokasi sumber dan pembahasan utama.
+  yang telah dikumpul melalui beberapa kali kunjungan dari lokasi sumber dan pembahasan utama dari website yang yang di buata.
 </p>
 </div>
